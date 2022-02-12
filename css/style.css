@@ -11,11 +11,20 @@
 :root {
     --primary-color: #110229;
     --primary-color-alt: #585981;
+    --primary-color-alt-2: #8F90A6;
     --secondary-color: #1DAEFF;
+}
+
+a{
+    text-decoration: none;
 }
 
 li, ul {
     list-style: none;
+}
+
+*:focus {
+    outline: none;
 }
 
 .container-main {
@@ -163,4 +172,205 @@ li, ul {
     font-size: 24px;
     font-weight: 500;
     color: var(--secondary-color);
+}
+
+.section-recently-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.recently-container {
+    display: flex;
+    align-items: center;
+
+    padding: 30px 33px;
+    border: 1.5px solid #DCDCEB;
+    box-sizing: border-box;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.recently-container:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
+}
+
+.recently-container img {
+    margin-right: 36px;
+}
+
+.recently-container-text h3 {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.recently-container-text p{
+    color: var(--primary-color-alt-2);
+    font-size: 19px;
+    line-height: 37px;
+}
+
+.recently-text-price span {
+    background-color: var(--primary-color-alt-2);
+    color: #FFF;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 8px 18px;
+    border-radius: 10px;
+}
+
+.recently-text-description,
+.recently-text-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-estate {
+    margin-top: 120px;
+    margin-bottom: 97px;
+}
+
+.section-estate-hero {
+    background-image: url('../img/real-estate.svg');
+    background-repeat: no-repeat;
+    background-image: cover;
+    height: 482px;
+    width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-estate-text {
+    padding-top: 85px;
+    padding-left: 86px;
+}
+
+.section-estate-text h1 {
+    font-size: 54px;
+    max-width: 364px;
+    width: 100%;
+    line-height: 70px;
+    color: var(--primary-color);
+}
+
+.section-estate-text p {
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 470px;
+    width: 100%;
+    padding-top: 33px;
+    padding-bottom: 37px;
+    color: var(--primary-color-alt);
+    line-height: 36px;
+}
+
+.section-estate-text a {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 10px 32px;
+    background-color: var(--secondary-color);
+    border-radius: 14px;
+}
+
+.footer {
+    margin-bottom: 108px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-container p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color-alt-2);
+    line-height: 31px;
+
+    max-width: 410px;
+    width: 100%;
+    margin-top: 27px;
+    margin-bottom: 34px;
+}
+
+.footer-logo-container span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primary-color-alt-2);
+    line-height: 17px;
+}
+
+.footer-social-media {
+    margin-bottom: 35px;
+}
+
+.footer-social-media a {
+    font-size: 28px;
+    color: var(--secondary-color);
+}
+
+.footer-social-media a:not(:last-child) {
+    padding-right: 28px;
+}
+
+.footer-tour-container h3,
+.footer-company-container h3,
+.footer-subscribe-container h3 {
+    margin-bottom: 12px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-size: 600;
+    line-height: 26px;
+}
+
+.footer-tour-container p a,
+.footer-company-container p a{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-size: 400;
+    line-height: 52px;
+}
+
+.footer-subscribe-container p {
+    color: var(--primary-color-alt-2);
+    font-size: 14px;
+    line-height: 23px; 
+    margin-bottom: 22px;
+    margin-top: 25px;
+
+    max-width: 255px;
+    width: 100%;
+}
+
+.footer-subscribe-input {
+    position: relative;
+}
+
+.footer-subscribe-input input {
+    border: 2px solid #D0D0E3;
+    border-radius: 15px;
+    padding: 15px;
+    width: 230px;
+
+}
+
+.footer-subscribe-input i {
+    position: absolute;
+    right: 32px;
+    top: 5px;
+    font-size: 18px;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: #FFF;
+    border-radius: 30%;
 }
