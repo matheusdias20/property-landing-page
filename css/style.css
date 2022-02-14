@@ -6,6 +6,7 @@
     box-sizing: border-box;
 
     font-family: 'Heebo', sans-serif;
+
 }
 
 :root {
@@ -215,6 +216,17 @@ li, ul {
     line-height: 37px;
 }
 
+.recently-text-description,
+.recently-text-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recently-text-price {
+    margin-top: 30px;
+}
+
 .recently-text-price span {
     background-color: var(--primary-color-alt-2);
     color: #FFF;
@@ -224,12 +236,6 @@ li, ul {
     border-radius: 10px;
 }
 
-.recently-text-description,
-.recently-text-price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .section-estate {
     margin-top: 120px;
@@ -239,7 +245,6 @@ li, ul {
 .section-estate-hero {
     background-image: url('../img/real-estate.svg');
     background-repeat: no-repeat;
-    background-image: cover;
     height: 482px;
     width: 1300px;
     display: block;
